@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT GarudaFood - Providing Quality Food & Beverages for All</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#e67e22", secondary: "#2c3e50" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+          font-family: 'Poppins', sans-serif;
+      }
+      .section-title {
+          position: relative;
+          display: inline-block;
+          margin-bottom: 2rem;
+      }
+      .section-title::after {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          width: 60px;
+          height: 3px;
+          background-color: #e67e22;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <a href="#" class="text-3xl font-['Pacifico'] text-primary">logo</a>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+          <a
+            href="#home"
+            class="text-gray-700 hover:text-primary font-medium transition-colors"
+            >Home</a
+          >
+          <a
+            href="#industry"
+            class="text-gray-700 hover:text-primary font-medium transition-colors"
+            >Industry Profile</a
+          >
+          <a
+            href="#vision"
+            class="text-gray-700 hover:text-primary font-medium transition-colors"
+            >Vision & Mission</a
+          >
+          <a
+            href="#history"
+            class="text-gray-700 hover:text-primary font-medium transition-colors"
+            >History</a
+          >
+          <a
+            href="#products"
+            class="text-gray-700 hover:text-primary font-medium transition-colors"
+            >Products</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-700 hover:text-primary font-medium transition-colors"
+            >Contact</a
+          >
+        </nav>
+        <div class="md:hidden w-10 h-10 flex items-center justify-center">
+          <i class="ri-menu-line ri-2x text-gray-700"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="pt-20 relative min-h-[600px] flex items-center"
+      style="background-image: url('https://readdy.ai/api/search-image?query=professional%20food%20and%20beverage%20company%20office%20with%20modern%20interior%2C%20clean%20environment%2C%20food%20production%20facility%20with%20high-tech%20equipment%2C%20staff%20working%20in%20a%20bright%20spacious%20area%2C%20corporate%20atmosphere%2C%20warm%20lighting%2C%20neutral%20colors%20on%20the%20left%20side%20gradually%20transitioning%20to%20food%20products%20display%20on%20the%20right&width=1920&height=800&seq=1&orientation=landscape'); background-size: cover; background-position: center;"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-white/90 to-white/40"
+      ></div>
+      <div class="container mx-auto px-4 py-16 relative z-10">
+        <div class="w-full max-w-2xl">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+            Providing Quality Food & Beverages for All
+          </h1>
+          <p class="text-lg text-gray-700 mb-8">
+            Welcome to PT GarudaFood! We are a leading company in the food and
+            beverage industry in Indonesia, focusing on quality and innovation.
+            Learn more about us and our featured products.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#products"
+              class="px-6 py-3 bg-primary text-white font-medium !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors"
+              >Explore Our Products</a
+            >
+            <a
+              href="#contact"
+              class="px-6 py-3 border-2 border-primary text-primary font-medium !rounded-button whitespace-nowrap hover:bg-primary/10 transition-colors"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industry Profile Section -->
+    <section id="industry" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="section-title text-3xl font-bold text-gray-800">
+          PT GarudaFood Industry Profile
+        </h2>
+        <div class="max-w-4xl">
+          <p class="text-lg text-gray-700 leading-relaxed">
+            PT GarudaFood is a leader in the food and beverage industry,
+            offering a variety of products including snacks, drinks, and
+            processed foods. We prioritize quality and innovation in every
+            product we create.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div
+                class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+              >
+                <i class="ri-award-line ri-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Quality Assurance</h3>
+              <p class="text-gray-600">
+                We implement strict quality control measures throughout our
+                production process to ensure the highest standards.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div
+                class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+              >
+                <i class="ri-lightbulb-line ri-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Innovation</h3>
+              <p class="text-gray-600">
+                Our R&D team constantly develops new products and improves
+                existing ones to meet changing consumer preferences.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div
+                class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4"
+              >
+                <i class="ri-global-line ri-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Market Presence</h3>
+              <p class="text-gray-600">
+                With a strong distribution network, our products are available
+                throughout Indonesia and in several international markets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section id="vision" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="section-title text-3xl font-bold text-gray-800">
+          Our Vision & Mission
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-8">
+          <div
+            class="bg-gradient-to-br from-primary/5 to-primary/10 p-8 rounded-lg border border-primary/20"
+          >
+            <h3 class="text-2xl font-semibold mb-4 flex items-center">
+              <div class="w-10 h-10 flex items-center justify-center mr-3">
+                <i class="ri-eye-line ri-lg text-primary"></i>
+              </div>
+              Vision
+            </h3>
+            <p class="text-lg text-gray-700 italic">
+              "To be a leading company in the food and beverage industry,
+              excelling in quality and innovation."
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-semibold mb-4 flex items-center">
+              <div class="w-10 h-10 flex items-center justify-center mr-3">
+                <i class="ri-flag-line ri-lg text-primary"></i>
+              </div>
+              Mission
+            </h3>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center mt-1 mr-3 bg-primary/10 rounded-full"
+                >
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <p class="text-gray-700">
+                  To provide high-quality products that meet international
+                  standards and satisfy consumer needs.
+                </p>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center mt-1 mr-3 bg-primary/10 rounded-full"
+                >
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <p class="text-gray-700">
+                  To foster continuous innovation in product development,
+                  manufacturing processes, and business practices.
+                </p>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center mt-1 mr-3 bg-primary/10 rounded-full"
+                >
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <p class="text-gray-700">
+                  To build strong relationships with customers, suppliers,
+                  employees, and communities where we operate.
+                </p>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center mt-1 mr-3 bg-primary/10 rounded-full"
+                >
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <p class="text-gray-700">
+                  To maintain sustainable business practices that respect the
+                  environment and contribute to social welfare.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="section-title text-3xl font-bold text-gray-800">
+          PT GarudaFood History
+        </h2>
+
+        <div class="max-w-4xl mx-auto mt-8">
+          <p class="text-lg text-gray-700 mb-12">
+            Founded in 1990, PT GarudaFood has grown into a leading company in
+            Indonesia. Committed to quality and innovation, we continue to
+            introduce products that are loved by consumers.
+          </p>
+
+          <div class="relative">
+            <div
+              class="absolute left-4 top-0 bottom-0 w-0.5 bg-primary/30"
+            ></div>
+
+            <div class="relative pl-12 pb-12">
+              <div
+                class="absolute left-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center"
+              >
+                <i class="ri-calendar-line text-white"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">1990 - Foundation</h3>
+              <p class="text-gray-600">
+                PT GarudaFood was established with a vision to provide quality
+                food products to Indonesian consumers.
+              </p>
+            </div>
+
+            <div class="relative pl-12 pb-12">
+              <div
+                class="absolute left-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center"
+              >
+                <i class="ri-calendar-line text-white"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">
+                1995 - Product Expansion
+              </h3>
+              <p class="text-gray-600">
+                Expanded product line to include a variety of snacks and
+                beverages, becoming a household name in Indonesia.
+              </p>
+            </div>
+
+            <div class="relative pl-12 pb-12">
+              <div
+                class="absolute left-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center"
+              >
+                <i class="ri-calendar-line text-white"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">
+                2005 - International Expansion
+              </h3>
+              <p class="text-gray-600">
+                Began exporting products to neighboring countries in Southeast
+                Asia, marking the beginning of international presence.
+              </p>
+            </div>
+
+            <div class="relative pl-12">
+              <div
+                class="absolute left-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center"
+              >
+                <i class="ri-calendar-line text-white"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">
+                2020 - Modern Innovation
+              </h3>
+              <p class="text-gray-600">
+                Implemented advanced manufacturing technologies and sustainable
+                practices, reinforcing commitment to quality and environmental
+                responsibility.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="section-title text-3xl font-bold text-gray-800">
+          Our Products
+        </h2>
+        <p class="text-lg text-gray-700 mb-12 max-w-3xl">
+          We offer a variety of featured products that combine quality
+          ingredients, innovative flavors, and nutritional value to meet diverse
+          consumer preferences.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:transform hover:scale-105"
+          >
+            <div class="h-64 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=high%20quality%20potato%20chips%20in%20elegant%20packaging%2C%20professional%20product%20photography%20with%20clean%20white%20background%2C%20crispy%20golden%20chips%20visible%2C%20modern%20packaging%20design%2C%20premium%20snack%20product&width=600&height=400&seq=2&orientation=portrait"
+                alt="Garuda Chips"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Garuda Chips</h3>
+              <p class="text-gray-600 mb-4">
+                Premium potato chips made from selected potatoes, available in
+                various flavors including Original, Spicy BBQ, and Sour Cream &
+                Onion.
+              </p>
+              <a
+                href="#"
+                class="text-primary font-medium flex items-center hover:underline"
+              >
+                Learn more
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:transform hover:scale-105"
+          >
+            <div class="h-64 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=refreshing%20fruit%20juice%20drink%20in%20modern%20glass%20bottle%2C%20professional%20product%20photography%20with%20clean%20white%20background%2C%20vibrant%20colored%20juice%2C%20sleek%20bottle%20design%20with%20modern%20label%2C%20premium%20beverage%20product&width=600&height=400&seq=3&orientation=portrait"
+                alt="Garuda Drink"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Garuda Drink</h3>
+              <p class="text-gray-600 mb-4">
+                Refreshing beverages made from natural ingredients, including
+                Fruit Juice, Tea, and Energy Drinks to quench your thirst.
+              </p>
+              <a
+                href="#"
+                class="text-primary font-medium flex items-center hover:underline"
+              >
+                Learn more
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:transform hover:scale-105"
+          >
+            <div class="h-64 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=premium%20mixed%20nuts%20in%20elegant%20packaging%2C%20professional%20product%20photography%20with%20clean%20white%20background%2C%20assorted%20nuts%20visible%2C%20modern%20packaging%20design%20with%20transparent%20window%2C%20premium%20healthy%20snack%20product&width=600&height=400&seq=4&orientation=portrait"
+                alt="Garuda Nuts"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Garuda Nuts</h3>
+              <p class="text-gray-600 mb-4">
+                High-quality nuts including cashews, almonds, and peanuts,
+                processed with advanced technology to maintain freshness and
+                nutrition.
+              </p>
+              <a
+                href="#"
+                class="text-primary font-medium flex items-center hover:underline"
+              >
+                Learn more
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a
+            href="#"
+            class="px-8 py-3 bg-primary text-white font-medium !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors inline-block"
+            >See All Products</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="section-title text-3xl font-bold text-gray-800">
+          Contact Us
+        </h2>
+        <p class="text-lg text-gray-700 mb-12 max-w-3xl">
+          For more information about our products or services, please reach out
+          to us. Our team is ready to assist you with any inquiries.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-6">Get in Touch</h3>
+
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center mr-4 bg-primary/10 rounded-full"
+                  >
+                    <i class="ri-map-pin-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-800">Address</h4>
+                    <p class="text-gray-600">
+                      Jl. Raya Garuda No. 10, Jakarta, Indonesia
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center mr-4 bg-primary/10 rounded-full"
+                  >
+                    <i class="ri-phone-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-800">Phone</h4>
+                    <p class="text-gray-600">(021) 123-4567</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center mr-4 bg-primary/10 rounded-full"
+                  >
+                    <i class="ri-mail-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-800">Email</h4>
+                    <p class="text-gray-600">info@garudafood.com</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center mr-4 bg-primary/10 rounded-full"
+                  >
+                    <i class="ri-time-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-800">Business Hours</h4>
+                    <p class="text-gray-600">
+                      Monday - Friday: 8:00 AM - 5:00 PM
+                    </p>
+                    <p class="text-gray-600">Saturday: 9:00 AM - 1:00 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-6">Send a Message</h3>
+
+              <form>
+                <div class="mb-4">
+                  <label for="name" class="block text-gray-700 mb-2"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                    placeholder="Your name"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label for="email" class="block text-gray-700 mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                    placeholder="Your email"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label for="subject" class="block text-gray-700 mb-2"
+                    >Subject</label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                    placeholder="Subject"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label for="message" class="block text-gray-700 mb-2"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    rows="4"
+                    class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="px-6 py-3 bg-primary text-white font-medium !rounded-button whitespace-nowrap hover:bg-primary/90 transition-colors"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <a
+              href="#"
+              class="text-3xl font-['Pacifico'] text-white mb-4 inline-block"
+              >logo</a
+            >
+            <p class="text-gray-400 mt-4">
+              PT GarudaFood is committed to providing quality food and beverages
+              for all consumers, with a focus on innovation and excellence.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#industry"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Industry Profile</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#vision"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Vision & Mission</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#history"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >History</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#products"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Products</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Garuda Chips</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Garuda Drink</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Garuda Nuts</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >All Products</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+            <div class="flex space-x-4 mb-6">
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-facebook-fill text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-twitter-fill text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-instagram-fill text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-linkedin-fill text-white"></i>
+              </a>
+            </div>
+
+            <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-4 py-2 border-none rounded-l focus:outline-none text-gray-800 w-full"
+              />
+              <button
+                class="bg-primary text-white px-4 py-2 !rounded-r-button whitespace-nowrap hover:bg-primary/90 transition-colors"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400">
+            © 2025 PT GarudaFood. All rights reserved.
+          </p>
+          <div class="flex space-x-6 mt-4 md:mt-0">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-primary transition-colors"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-gray-400 hover:text-primary transition-colors"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mobile menu toggle
+        const menuButton = document.querySelector(".ri-menu-line");
+        const nav = document.querySelector("nav");
+
+        if (menuButton && nav) {
+          menuButton.addEventListener("click", function () {
+            nav.classList.toggle("hidden");
+            nav.classList.toggle("flex");
+            nav.classList.toggle("flex-col");
+            nav.classList.toggle("absolute");
+            nav.classList.toggle("top-16");
+            nav.classList.toggle("right-4");
+            nav.classList.toggle("bg-white");
+            nav.classList.toggle("p-4");
+            nav.classList.toggle("shadow-lg");
+            nav.classList.toggle("rounded-lg");
+            nav.classList.toggle("space-y-4");
+            nav.classList.toggle("space-x-0");
+            nav.classList.toggle("md:flex");
+            nav.classList.toggle("md:space-x-8");
+            nav.classList.toggle("md:static");
+            nav.classList.toggle("md:p-0");
+            nav.classList.toggle("md:shadow-none");
+            nav.classList.toggle("md:bg-transparent");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
